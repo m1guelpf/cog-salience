@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+import nltk
+from sentence_transformers import SentenceTransformer
+
+SentenceTransformer('all-mpnet-base-v2', cache_folder='models')
+nltk.download('punkt', download_dir='models/nltk_data')
